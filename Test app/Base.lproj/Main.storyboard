@@ -73,12 +73,18 @@ Dimensions</string>
                                                         <state key="normal" image="icons8-camera-100">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="cameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zMa-M7-7En"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84S-6H-gWH">
                                                         <rect key="frame" x="170" y="0.0" width="100" height="100"/>
                                                         <state key="normal" image="icons8-paper-plane-100">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="sendButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evy-Aj-06U"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -104,6 +110,9 @@ Dimensions</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dimensionsLabel" destination="ME2-d1-GIO" id="duf-Al-4wf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
