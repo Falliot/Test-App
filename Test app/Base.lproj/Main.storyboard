@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,21 +12,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Itp-43-fNw">
-                                <rect key="frame" x="0.0" y="-44" width="375" height="755"/>
+                                <rect key="frame" x="0.0" y="-44" width="414" height="824"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tcs-aI-krU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7I2-6T-Plw" userLabel="TopView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="221.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="244.66666666666666"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snu-Yh-JJz">
-                                                <rect key="frame" x="11.5" y="84.5" width="352" height="113"/>
+                                                <rect key="frame" x="31" y="96" width="352" height="113"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="352" id="OuU-Ll-ngv"/>
                                                     <constraint firstAttribute="height" constant="113" id="kEa-cJ-zrq"/>
@@ -44,10 +44,10 @@ Dimensions</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYz-lm-mag" userLabel="MiddleView">
-                                        <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                        <rect key="frame" x="0.0" y="245.66666666666669" width="414" height="244.66666666666669"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dimensions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME2-d1-GIO">
-                                                <rect key="frame" x="-4" y="8" width="383" height="206"/>
+                                                <rect key="frame" x="15.666666666666657" y="19.333333333333343" width="383" height="206"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="383" id="PTr-QD-xXE"/>
                                                     <constraint firstAttribute="height" constant="206" id="wcT-Nx-hmt"/>
@@ -63,10 +63,10 @@ Dimensions</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyx-v2-A0i" userLabel="BottomView">
-                                        <rect key="frame" x="0.0" y="445.5" width="375" height="221.5"/>
+                                        <rect key="frame" x="0.0" y="491.33333333333331" width="414" height="244.66666666666669"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="Kpd-OL-JjQ">
-                                                <rect key="frame" x="52.5" y="60.5" width="270" height="100"/>
+                                                <rect key="frame" x="72" y="72.333333333333314" width="270" height="100"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka1-MG-GWU">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>

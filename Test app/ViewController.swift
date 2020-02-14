@@ -11,9 +11,7 @@ import UIKit
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     
-    
     @IBOutlet weak var dimensionsLabel: UILabel!
-    
     
     
     override func viewDidLoad() {
@@ -30,6 +28,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         present(camera, animated: true)
     }
     
+    
+    func alert()
+    {
+        let alertController = UIAlertController(title: "Test app", message:
+            "The dimensions have been sent", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    
+    
+    
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true)
         
@@ -40,18 +52,30 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         //Printing image dimensions in the terminal
         print(image.size)
         
-        dimensionsLabel.text = "Size: \(String(format:"%.0f" ,image.size.width)) x  \(String(format: "%0.f", image.size.height))"
+        let imageHight = image.size.height
+        let imageWidth = image.size.width
+        
+        // Printing image dimensions to the main screen
+        dimensionsLabel.text = "Size: \(String(format:"%.0f" ,imageWidth)) x  \(String(format: "%0.f", imageHight))"
         
     }
-    
-    
-    
+        
     @IBAction func sendButton(_ sender: Any) {
+     
+        let dimensions = Dimentions(dimensions: dimensionsLabel.text!)
         
+        let postRequest = APIRequest()
+        
+        postRequest.save(dimensions, completion: {result in
+            switch result {
+            case .success(let dimensions):
+                print("The following dimensions have been sent: \(dimensions)")
+            case .failure(let error):
+                print("An error occured \(error)")
+            }
+        })
+        alert()
     }
-    
-    
-    
 
 }
 
