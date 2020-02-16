@@ -46,20 +46,35 @@ Dimensions</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYz-lm-mag" userLabel="MiddleView">
                                         <rect key="frame" x="0.0" y="245.66666666666669" width="414" height="244.66666666666669"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dimensions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME2-d1-GIO">
-                                                <rect key="frame" x="15.666666666666657" y="19.333333333333343" width="383" height="206"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="383" id="PTr-QD-xXE"/>
-                                                    <constraint firstAttribute="height" constant="206" id="wcT-Nx-hmt"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="40"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="XfW-05-koG">
+                                                <rect key="frame" x="27" y="47.333333333333343" width="360" height="150"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dimensions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME2-d1-GIO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="B68-2u-9C6"/>
+                                                            <constraint firstAttribute="height" constant="150" id="fKu-u4-74W"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRm-LI-7N1">
+                                                        <rect key="frame" x="200" y="0.0" width="160" height="150"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="CIz-yM-y7Q"/>
+                                                            <constraint firstAttribute="height" constant="150" id="Mhr-9P-3lE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="ME2-d1-GIO" firstAttribute="centerX" secondItem="gYz-lm-mag" secondAttribute="centerX" id="DGD-4p-HCz"/>
-                                            <constraint firstItem="ME2-d1-GIO" firstAttribute="centerY" secondItem="gYz-lm-mag" secondAttribute="centerY" id="pNg-fS-0cP"/>
+                                            <constraint firstItem="XfW-05-koG" firstAttribute="centerY" secondItem="gYz-lm-mag" secondAttribute="centerY" id="WYP-j9-KNo"/>
+                                            <constraint firstItem="XfW-05-koG" firstAttribute="centerX" secondItem="gYz-lm-mag" secondAttribute="centerX" id="uiq-uL-7bo"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyx-v2-A0i" userLabel="BottomView">
@@ -112,6 +127,7 @@ Dimensions</string>
                     </view>
                     <connections>
                         <outlet property="dimensionsLabel" destination="ME2-d1-GIO" id="duf-Al-4wf"/>
+                        <outlet property="locationLabel" destination="FRm-LI-7N1" id="9th-Cr-gCe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

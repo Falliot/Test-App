@@ -8,11 +8,13 @@
 
 import Foundation
 
-struct Dimentions : Codable
+struct Dimensions : Codable
 {
     var dimensions : String
+    var location : String
     
-    init(dimensions: String) {
+    init(dimensions: String, location: String ) {
         self.dimensions = dimensions
+        self.location = location
     }
 }

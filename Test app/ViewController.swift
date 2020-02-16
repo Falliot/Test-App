@@ -7,18 +7,36 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate {
 
-    
     @IBOutlet weak var dimensionsLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
     
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled()
+        {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
     }
-
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        
+        locationLabel.text = "Location: \(locValue.latitude), \(locValue.longitude)"
+    }
+    
+    //camera button
     @IBAction func cameraButton(_ sender: Any) {
         
         let camera = UIImagePickerController()
@@ -28,7 +46,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         present(camera, animated: true)
     }
     
-    
+    //a pop up message after sending the dimensions
     func alert()
     {
         let alertController = UIAlertController(title: "Test app", message:
@@ -39,9 +57,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     
-    
-    
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true)
         
@@ -49,24 +64,25 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             print("Image not found")
             return
         }
+        
         //Printing image dimensions in the terminal
         print(image.size)
         
-        let imageHight = image.size.height
+        let imageHeight = image.size.height
         let imageWidth = image.size.width
         
         // Printing image dimensions to the main screen
-        dimensionsLabel.text = "Size: \(String(format:"%.0f" ,imageWidth)) x  \(String(format: "%0.f", imageHight))"
+        dimensionsLabel.text = "Size: \(String(format:"%.0f" ,imageWidth)) x \(String(format: "%0.f", imageHeight))"
         
     }
-        
+    //send button
     @IBAction func sendButton(_ sender: Any) {
      
-        let dimensions = Dimentions(dimensions: dimensionsLabel.text!)
+        let information = Dimensions(dimensions: dimensionsLabel.text!, location: locationLabel.text!)
         
         let postRequest = APIRequest()
         
-        postRequest.save(dimensions, completion: {result in
+        postRequest.save(information, completion: {result in
             switch result {
             case .success(let dimensions):
                 print("The following dimensions have been sent: \(dimensions)")
