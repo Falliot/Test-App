@@ -16,4 +16,12 @@ The app has two buttons:
 ![Screenshot](https://github.com/Falliot/Test-App/blob/master/docs/simulatorScreenShot.png)
 
 ## UNIT TESTING
+`func testIfbuttonsHaveActionAssigned()`
+
+`func testViewControllerIsComposedOfLabel()`
+
+`func testViewControllerInitializesLabelText()`
+
+`func testLabelAfterButtonTap()`
+
 [Tests](https://github.com/Falliot/Test-App/tree/master/Test%20appTests)
