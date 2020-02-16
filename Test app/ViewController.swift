@@ -47,6 +47,13 @@ Sends the data: `@IBAction func sendButton(_ sender: Any)`
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate {
 
+    ///Camera UIButton
+    @IBOutlet weak var camera: UIButton!
+    
+    ///Send UIButton
+    
+    @IBOutlet weak var send: UIButton!
+    
     ///UILabel for image dimensions
     
     @IBOutlet weak var dimensionsLabel: UILabel!
@@ -83,12 +90,31 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     ///Function of  a camera button
     @IBAction func cameraButton(_ sender: Any) {
-        
-        let camera = UIImagePickerController()
-        camera.sourceType = .camera
-        camera.allowsEditing = false
-        camera.delegate = self
-        present(camera, animated: true)
+        if UIImagePickerController.availableCaptureModes(for: .rear) != nil {
+            let camera = UIImagePickerController()
+            camera.sourceType = .camera
+            camera.allowsEditing = false
+            camera.delegate = self
+            present(camera, animated: true)
+        }
+        else {
+            noCamera()
+        }
+    }
+    ///Function for camera in simulator that gives a pop up message "This device has no camera"
+    func noCamera(){
+        let alertVC = UIAlertController(
+            title: "No Camera",
+            message: "This device has no camera",
+            preferredStyle: .alert)
+        let okAction = UIAlertAction(
+            title: "OK",
+            style:.default,
+            handler: nil)
+        alertVC.addAction(okAction)
+        present(alertVC,
+            animated: true,
+            completion: nil)
     }
     
     ///Function of a pop up message after sending the dimensions
