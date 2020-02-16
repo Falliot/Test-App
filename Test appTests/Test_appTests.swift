@@ -82,12 +82,9 @@ class Test_appTests: XCTestCase {
         let actualLocationLabelText = view.locationLabel.text
         
         
-        
         XCTAssertEqual(expectedLocationLabelText, actualLocationLabelText, "Label text of: \(expectedLocationLabelText) not equal to text: \(String(describing: actualLocationLabelText))")
         
     }
-    
-    
     
     
     

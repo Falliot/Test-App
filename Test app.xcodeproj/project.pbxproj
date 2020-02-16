@@ -257,7 +257,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X7D7227TDX;
+				DEVELOPMENT_TEAM = 7DCQ79673J;
 				INFOPLIST_FILE = "Test appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -277,7 +277,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X7D7227TDX;
+				DEVELOPMENT_TEAM = 7DCQ79673J;
 				INFOPLIST_FILE = "Test appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

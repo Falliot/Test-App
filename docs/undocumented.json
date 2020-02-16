@@ -86,7 +86,7 @@
     },
     {
       "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
-      "line": 62,
+      "line": 69,
       "symbol": "ViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

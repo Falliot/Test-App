@@ -86,64 +86,8 @@
     },
     {
       "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
-      "line": 50,
-      "symbol": "ViewController.dimensionsLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
-      "line": 51,
-      "symbol": "ViewController.locationLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
-      "line": 53,
-      "symbol": "ViewController.locationManager",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
-      "line": 55,
+      "line": 62,
       "symbol": "ViewController.viewDidLoad()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
-      "line": 69,
-      "symbol": "ViewController.locationManager(_:didUpdateLocations:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
-      "line": 76,
-      "symbol": "ViewController.cameraButton(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
-      "line": 86,
-      "symbol": "ViewController.alert()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
-      "line": 96,
-      "symbol": "ViewController.imagePickerController(_:didFinishPickingMediaWithInfo:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
-      "line": 115,
-      "symbol": "ViewController.sendButton(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }

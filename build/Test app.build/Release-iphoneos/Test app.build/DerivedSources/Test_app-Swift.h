@@ -228,6 +228,7 @@ SWIFT_CLASS("_TtC8Test_app13SceneDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 @class UILabel;
 @class CLLocationManager;
 @class CLLocation;
@@ -267,6 +268,10 @@ SWIFT_CLASS("_TtC8Test_app13SceneDelegate")
 /// \endcode
 SWIFT_CLASS("_TtC8Test_app14ViewController")
 @interface ViewController : UIViewController <CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+/// Camera UIButton
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified camera;
+/// Send UIButton
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified send;
 /// UILabel for image dimensions
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dimensionsLabel;
 /// UILabel for location
