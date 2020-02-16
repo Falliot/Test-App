@@ -14,3 +14,6 @@ The app has two buttons:
 
 ## Screenshot
 ![Screenshot](https://github.com/Falliot/Test-App/blob/master/docs/simulatorScreenShot.png)
+
+## UNIT TESTING
+[Tests](https://github.com/Falliot/Test-App/tree/master/Test%20appTests)
