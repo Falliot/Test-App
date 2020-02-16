@@ -12,8 +12,16 @@ import Foundation
 
 enum APIError:Error
 {
+    /// enum case for response problem
+    
     case responseProblem
+    
+    /// enum case for decoding problem
+    
     case decodeProblem
+    
+    /// enum case for encoding problem
+    
     case encodeProblem
 }
 
@@ -28,7 +36,7 @@ enum APIError:Error
  ```
 ## Save function
  
- Function that sends the information on the server
+ 
  
  ````
  func save(_ dimensionsToSave: Dimensions, completion: @escaping(Result<Dimensions, APIError>) -> Void)
@@ -37,8 +45,12 @@ enum APIError:Error
  */
 struct APIRequest {
     
+    /// defining a resoure URL
+    
     let resourseURL: URL
 
+    ///initializing the api structure
+    
     init() {
         
         let responseString = "https://testapp.requestcatcher.com"
@@ -47,7 +59,8 @@ struct APIRequest {
         self.resourseURL = resourseURL
     }
 
-
+/// Function that sends the information on the server
+    
     func save(_ dimensionsToSave: Dimensions, completion: @escaping(Result<Dimensions, APIError>) -> Void)
     {
      do {

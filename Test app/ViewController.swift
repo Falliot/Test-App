@@ -47,8 +47,15 @@ Sends the data: `@IBAction func sendButton(_ sender: Any)`
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate {
 
+    ///UILabel for image dimensions
+    
     @IBOutlet weak var dimensionsLabel: UILabel!
+    
+    ///UILabel for location
+    
     @IBOutlet weak var locationLabel: UILabel!
+    
+    /// The variable for the object that we use to start and stop the delivery of location-related events to our app.
     
     var locationManager = CLLocationManager()
     
@@ -66,13 +73,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
     }
     
+    /// Function that tells the delegate that new location data is available.
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         
         locationLabel.text = "Location \(locValue.latitude), \(locValue.longitude)"
     }
     
-    //camera button
+    ///Function of  a camera button
     @IBAction func cameraButton(_ sender: Any) {
         
         let camera = UIImagePickerController()
@@ -82,7 +91,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         present(camera, animated: true)
     }
     
-    //a pop up message after sending the dimensions
+    ///Function of a pop up message after sending the dimensions
     func alert()
     {
         let alertController = UIAlertController(title: "Test app", message:
@@ -92,6 +101,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         self.present(alertController, animated: true, completion: nil)
     }
     
+    ///Function that  tells the delegate that the user picked a still image or movie.
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true)
@@ -111,7 +121,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         dimensionsLabel.text = "Size: \(String(format:"%.0f" ,imageWidth)) x \(String(format: "%0.f", imageHeight))"
         
     }
-    //send button
+    ///Function of send button
     @IBAction func sendButton(_ sender: Any) {
      
         let information = Dimensions(dimensions: dimensionsLabel.text!, location: locationLabel.text!)

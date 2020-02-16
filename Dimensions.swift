@@ -21,8 +21,15 @@ This is a structure for JSON
 
 struct Dimensions : Codable
 {
+    /// A string for dimensions in a form:  Ex. 100 x 100
+    
     var dimensions : String
+    
+    /// A string for location in a form:  latitude x longtitude
+    
     var location : String
+    
+    ///An initializer that takes two arguments dimensions and location
     
     init(dimensions: String, location: String) {
         self.dimensions = dimensions
