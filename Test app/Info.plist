@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>to get location</string>
+	<string>Accept to get location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>to get location</string>
+	<string>Accept to get location</string>
 	<key>NSCameraUsageDescription</key>
-	<string>To take pictures </string>
+	<string>Accept to take pictures </string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
