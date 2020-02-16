@@ -13,4 +13,4 @@ The app has two buttons:
 2. Send button is for sending the data on the server in JSON format
 
 ## Screenshot
-![Screenshot](https://github.com/Falliot/Test-App/blob/master/docs/screenshot.png)
+![Screenshot](https://github.com/Falliot/Test-App/blob/master/docs/Image.png)
