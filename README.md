@@ -13,9 +13,9 @@ The app has two buttons:
 2. Send button is for sending the data on the server in JSON format
 
 ## Screenshot
-![Screenshot](https://github.com/Falliot/Test-App/blob/master/docs/simulatorScreenShot.png)
+![Screenshot](https://github.com/Falliot/Test-App/blob/master/docs/simulatorScreenShot.jpg)
 
-## UNIT TESTING
+## Unit testing
 `func testIfbuttonsHaveActionAssigned()`
 
 `func testViewControllerIsComposedOfLabel()`
