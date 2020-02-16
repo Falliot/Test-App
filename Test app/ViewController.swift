@@ -9,6 +9,42 @@
 import UIKit
 import MapKit
 
+/**
+ 
+# Test app
+ 
+ The app that sends image dimensions and location on the server in JSON format
+ 
+## Labels
+
+ 1. dimensionLabel
+ 2. locationLabel
+
+## Functions
+
+### cameraButton
+
+Opens the camera: `@IBAction func cameraButton(_ sender: Any)`
+
+### alert
+
+Pop up message:  `func alert()`
+
+### imagePickerController
+
+````
+func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
+```
+
+Tells the delegate that the user picked a still image or movie.
+
+### sendButton
+
+Sends the data: `@IBAction func sendButton(_ sender: Any)`
+ 
+ */
+
+
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var dimensionsLabel: UILabel!
@@ -33,7 +69,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         
-        locationLabel.text = "Location: \(locValue.latitude), \(locValue.longitude)"
+        locationLabel.text = "Location \(locValue.latitude), \(locValue.longitude)"
     }
     
     //camera button
@@ -50,7 +86,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     func alert()
     {
         let alertController = UIAlertController(title: "Test app", message:
-            "The dimensions have been sent", preferredStyle: .alert)
+            "The data have been sent", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
 
         self.present(alertController, animated: true, completion: nil)
@@ -84,8 +120,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         postRequest.save(information, completion: {result in
             switch result {
-            case .success(let dimensions):
-                print("The following dimensions have been sent: \(dimensions)")
+            case .success(let info):
+                print("The following data have been sent: \(info)")
             case .failure(let error):
                 print("An error occured \(error)")
             }

@@ -1,0 +1,215 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/anton/Desktop/Test app/Dimensions.swift",
+      "line": 26,
+      "symbol": "Dimensions.dimensions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Dimensions.swift",
+      "line": 27,
+      "symbol": "Dimensions.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Dimensions.swift",
+      "line": 29,
+      "symbol": "Dimensions.init(dimensions:location:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/AppDelegate.swift",
+      "line": 16,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/AppDelegate.swift",
+      "line": 23,
+      "symbol": "AppDelegate.application(_:configurationForConnecting:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/AppDelegate.swift",
+      "line": 29,
+      "symbol": "AppDelegate.application(_:didDiscardSceneSessions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/RequestAPI.swift",
+      "line": 17,
+      "symbol": "APIError.responseProblem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/RequestAPI.swift",
+      "line": 18,
+      "symbol": "APIError.decodeProblem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/RequestAPI.swift",
+      "line": 19,
+      "symbol": "APIError.encodeProblem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/RequestAPI.swift",
+      "line": 42,
+      "symbol": "APIRequest.resourseURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/RequestAPI.swift",
+      "line": 44,
+      "symbol": "APIRequest.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/RequestAPI.swift",
+      "line": 53,
+      "symbol": "APIRequest.save(_:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/SceneDelegate.swift",
+      "line": 11,
+      "symbol": "SceneDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/SceneDelegate.swift",
+      "line": 13,
+      "symbol": "SceneDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/SceneDelegate.swift",
+      "line": 16,
+      "symbol": "SceneDelegate.scene(_:willConnectTo:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/SceneDelegate.swift",
+      "line": 23,
+      "symbol": "SceneDelegate.sceneDidDisconnect(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/SceneDelegate.swift",
+      "line": 30,
+      "symbol": "SceneDelegate.sceneDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/SceneDelegate.swift",
+      "line": 35,
+      "symbol": "SceneDelegate.sceneWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/SceneDelegate.swift",
+      "line": 40,
+      "symbol": "SceneDelegate.sceneWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/SceneDelegate.swift",
+      "line": 45,
+      "symbol": "SceneDelegate.sceneDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
+      "line": 54,
+      "symbol": "ViewController.dimensionsLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
+      "line": 55,
+      "symbol": "ViewController.locationLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
+      "line": 57,
+      "symbol": "ViewController.locationManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
+      "line": 59,
+      "symbol": "ViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
+      "line": 73,
+      "symbol": "ViewController.locationManager(_:didUpdateLocations:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
+      "line": 80,
+      "symbol": "ViewController.cameraButton(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
+      "line": 90,
+      "symbol": "ViewController.alert()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
+      "line": 100,
+      "symbol": "ViewController.imagePickerController(_:didFinishPickingMediaWithInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Test app/Test app/ViewController.swift",
+      "line": 119,
+      "symbol": "ViewController.sendButton(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/anton/Desktop/Test app"
+}

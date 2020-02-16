@@ -7,6 +7,8 @@
 //
 
 import Foundation
+ 
+/// This is an enumeration of the possible errors when contacting the API
 
 enum APIError:Error
 {
@@ -15,22 +17,40 @@ enum APIError:Error
     case encodeProblem
 }
 
+/**
+ 
+ API structure
+ 
+## Server
+ 
+ ````
+ let responseString = "https://testapp.requestcatcher.com"
+ ```
+## Save function
+ 
+ Function that sends the information on the server
+ 
+ ````
+ func save(_ dimensionsToSave: Dimensions, completion: @escaping(Result<Dimensions, APIError>) -> Void)
+ ```
+ 
+ */
 struct APIRequest {
     
     let resourseURL: URL
 
     init() {
+        
         let responseString = "https://testapp.requestcatcher.com"
         guard let resourseURL = URL(string: responseString) else {fatalError()}
 
         self.resourseURL = resourseURL
     }
 
-    
 
     func save(_ dimensionsToSave: Dimensions, completion: @escaping(Result<Dimensions, APIError>) -> Void)
     {
-     do{
+     do {
         var urlRequest = URLRequest(url: resourseURL)
         urlRequest.httpMethod = "POST"
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -50,7 +70,7 @@ struct APIRequest {
             }
         }
         dataTask.resume()
-     }catch{
+     } catch {
         completion(.failure(.encodeProblem))
         }
     }
